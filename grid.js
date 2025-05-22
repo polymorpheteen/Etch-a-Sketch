@@ -2,6 +2,10 @@ const TOTAL_SIZE = 960;
 const container = document.querySelector(".container");
 const button = document.querySelector(".btn");
 
+function randomNumber() {
+  return Math.floor(Math.random() * 256);
+}
+
 function createGrid(squaresPerSide) {
   container.innerText = "";
 
@@ -12,7 +16,7 @@ function createGrid(squaresPerSide) {
     div.style.height = TOTAL_SIZE / squaresPerSide + "px";
 
     div.addEventListener("mouseover", () => {
-      div.style.backgroundColor = "black";
+      div.style.backgroundColor = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
     });
     container.appendChild(div);
   }
