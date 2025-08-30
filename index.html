@@ -7,11 +7,27 @@
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="grid.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <button class="btn">New Grid</button>
-    <div class="container"></div>
+    <h2>
+        Etch-a-Sketch
+    </h2>
+    <div class="wrapper">
+        <div class="container"></div>
+        <div class="input">
+            <button class="btn new-grid-btn">New Grid</button>
+            <button class="btn clear-btn">Clear</button>
+            <div class="paint">
+                <input type="color" id="color-picker" name="color-picker" value="#000" />
+                <label>Choose a color</label>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
